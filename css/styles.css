@@ -406,7 +406,7 @@ footer {
 }
 
 #gallery {
-  padding: 50px 15px;
+  padding: 50px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
 }
@@ -423,8 +423,16 @@ footer {
   border-radius: 4px;
 }
 .gallery-image {
+  width: 25%;
+  padding-left: 2%;
+  padding-right: 2%;
   float: left;
   position: relative;
+}
+.container1 {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 100%;
 }
 .overlay {
   position: absolute;
@@ -436,10 +444,10 @@ footer {
   opacity: 0;
   color: white;
   font-size: 15px;
-  padding: 10px;
-  width: 200px;
+  padding: 3%;
+  width: 66%;
   text-align: center;
-  left: 46px;
+  left: 17%;
 }
 .gallery-image:hover .overlay {
   opacity: 1;
@@ -577,27 +585,6 @@ footer {
   padding: 0 0 0 15px;
 }
 
-@media only screen and (max-width: 750px) {
-  #experience-timeline:before,
-  #experience-timeline:after {
-    left: 23px;
-  }
-  .vtimeline-date {
-    width: auto;
-    text-align: left;
-    position: relative;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: 70px;
-  }
-  .vtimeline-icon {
-    margin-left: 0;
-  }
-  .vtimeline-content {
-    margin-left: 70px;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   #lead {
     height: auto;
@@ -625,7 +612,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 940px) {
   header {
     position: fixed;
     display: none;
@@ -675,6 +662,17 @@ footer {
     top: auto;
     transform: none;
   }
+  .gallery-image {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+  }
+  .overlay {
+    width: 25%;
+    left: 37.5%;
+    padding: 1%;
+  }
   footer {
     text-align: center;
   }
@@ -693,5 +691,10 @@ footer {
   #lead-content a {
     font-size: 0.9em;
     padding: 5px 10px;
+  }
+  .overlay {
+    width: 54%;
+    left: 23%;
+    padding: 2%;
   }
 }
