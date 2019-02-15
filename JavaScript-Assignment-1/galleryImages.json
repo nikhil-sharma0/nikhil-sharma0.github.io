@@ -1,0 +1,32 @@
+{
+    "images": [
+        {
+            "id": "1",
+            "imageUrl": "https://www.z-arts.org/wp-content/uploads/2014/07/Up-2009.jpg",
+            "imageInformation": "Up is an animated movie.",
+            "imageName": "UP Movie",
+            "updateDate": "2019-01-22"
+        },
+        {
+            "id": "2",
+            "imageUrl": "https://1.bp.blogspot.com/-RPcpdf8zOxA/VJDzKJn-exI/AAAAAAAAgHA/FCCDqkQEBP0/s1600/14_IO_Joy_5x8_Philippines.jpg",
+            "imageInformation": "Inside Out is an oscar winning animated movie.",
+            "imageName": "Inside Out",
+            "updateDate": "2019-01-22"
+        },
+        {
+            "id": "3",
+            "imageUrl": "http://cdn.collider.com/wp-content/uploads/big-hero-6-spanish-poster.jpg",
+            "imageInformation": "Big Hero 6 is an animated movie.",
+            "imageName": "Big Hero 6",
+            "updateDate": "2019-01-22"
+        },
+        {
+            "id": "4",
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51vgOCNPn3L.jpg",
+            "imageInformation": "Forzen is an animated movie about Elsa.",
+            "imageName": "Frozen",
+            "updateDate": "2019-01-22"
+        }
+    ]
+}

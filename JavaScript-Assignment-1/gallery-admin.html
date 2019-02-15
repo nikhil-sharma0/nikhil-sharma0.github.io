@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="./index.html#about">About</a>
+            </li>
+            <li>
+                <a href="./index.html#education">Education</a>
+            </li>
+            <li>
+                <a href="./index.html#projects">Projects</a>
+            </li>
+            <li>
+                <a href="./index.html#skills">Skills</a>
+            </li>
+            <li>
+                <a href="./index.html#gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="">Admin Gallery</a>
+            </li>
+            <li>
+                <a href="./index.html#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="popModal" class="pop-modal-class">
+        <div class="popup-modal-content">
+            <div class="popup-modal-header">
+                <span class="popup-close">&times;</span>
+                <h2 id="popupHead">Add Image</h2>
+            </div>
+            <div class="popup-modal-body">
+                <center>
+                    <label>Name</label>
+                    <input type="text" name="imageName" id="imageNameId" />
+                    <span id="nameCannotBeEmpty">*Name cannot be empty</span>
+                    <br><br>
+                    <label>URL</label>
+                    <input type="text" name="imageURL" id="imageURLId" />
+                    <span id="invalidUrl">*Invalid URL</span>
+                    <br><br>
+                    <label>Info</label>
+                    <input type="text" name="imageInfo" id="imageInfoId" />
+                    <br><br>
+                    <label>Update date</label>
+                    <input type="date" name="updateDate" id="imageUpdateDateId" />
+                    <span id="invalidDate">*Invalid date</span>
+                    <br><br>
+                    <button onclick="popupSubmit()" class="btn-rounded">Submit</button>
+                </center>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    <div id="gallery" class="background-alt" style="background-color: white">
+        <h2 class="heading">Admin Gallery</h2>
+        <div class="add-image-div" style="width: 100%">
+            <span>
+                <button type="button" class="btn-rounded" id="addImage" onclick="toggleAddModal()">
+                    Add image
+                </button>
+            </span>
+            <p><b>Right on any image to Edit/Delete.</p>
+        </div>
+        <br>
+        <br>
+        <div class="container1" id="galleryContainer">
+
+        </div>
+    </div>
+    <!-- End #gallery -->
+    <menu id="contextMenu" class="point">
+        <menu id="editImageMenu" title="Edit" class="edit-gallery-images edit-menu-option"></menu>
+        <menu id="deleteImageMenu" title="Delete" class="edit-gallery-images delete-menu-option"></menu>
+    </menu>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./galleryadmin.js"></script>
+</body>
+
+</html>
