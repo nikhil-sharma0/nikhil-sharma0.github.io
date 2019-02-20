@@ -1,11 +1,9 @@
 /*!
-    This .css file is the working behind the scenes to provide better scenery at front.
-    This file was a part of some template that I found online.
-    I edited and added the content that was required for the web page as per my needs.
-    Added new entries and their attributes accordingly.
-
-    Description: This file contains all the styles associated with the web page.
-*/
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 
 html {
   font-family: sans-serif;
